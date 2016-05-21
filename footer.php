@@ -2,7 +2,7 @@
 	<div class="footer">
 		<div class="row content-width">
 			<div class="col-xs-12 col-sm-6 col-md-3 info">
-				<img class="logo" src="images/logo.png"/>
+				<img class="logo" src="<?php echo get_template_directory_uri();?>/images/logo.png"/>
 
 				<p class="text">اسپرتیک را در شبکه های اجتماعی دنبال کنید و ما را حمایت کنید برای دریافت آخرین
 					اطلاعات</p>
@@ -82,8 +82,8 @@
 </footer>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery_1.11.3.min.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/js/jquery_1.11.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/js/bootstrap.min.js"></script>
 </body>
 </html>
