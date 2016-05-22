@@ -3,3 +3,43 @@ Template Name: Sportick.ir
 Author: Hamed Momeni (hmomeni.com)
 */
 @import "css/reset.css";
+
+@font-face {
+	font-family: 'BYekan';
+	src: url('fonts/BYekan.eot'); /* IE9 Compat Modes */
+	src: url('fonts/BYekan.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('fonts/BYekan.woff') format('woff'), /* Pretty Modern Browsers */ url('fonts/BYekan.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+.clr {
+	clear: both;
+}
+
+.clubs a {
+	color: black;
+	text-decoration: none;
+}
+
+article.club {
+	float: right;
+	background: white none repeat scroll 0 0;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 2px #ccc;
+	height: 260px;
+	margin: 25px;
+	width: 352px;
+	transition: all 0.3s ease-in-out;
+	padding: 0;
+}
+
+article.club:hover {
+	box-shadow: 0 0 2px #666;
+}
+
+h3.club-title {
+	font: 18px BYekan;
+	padding: 5px;
+}
+
+.club-except {
+	padding: 5px;
+}
