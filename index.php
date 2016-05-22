@@ -11,20 +11,21 @@ get_header();
 		<?php
 		$args = array(
 			'post_type' => 'club',
-			'posts_per_page' => 8,
+			'posts_per_page' => 9,
 		);
 		$wpq = new WP_Query($args);
 		$i = 1;
 		while ($wpq->have_posts()) {
 			$wpq->the_post();
+			$link = get_post_meta(get_the_ID(), 'url', true);
 			?>
-			<a href="<?php the_permalink(); ?>">
+			<a href="<?php echo $link; ?>">
 				<article class="club" id="club-<?php the_ID(); ?>">
 					<?php the_post_thumbnail('index-club'); ?>
+					<div class="club-except"><?php the_excerpt(); ?></div>
 					<h3 class="club-title">
 						<?php the_title(); ?>
 					</h3>
-					<div class="club-except"><?php the_excerpt(); ?></div>
 				</article>
 			</a>
 			<?php
